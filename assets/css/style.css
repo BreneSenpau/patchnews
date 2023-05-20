@@ -45,7 +45,7 @@ body{
    }
    .card-title{
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
    }
@@ -54,6 +54,11 @@ body{
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+   }
+
+   .card-img-top{
+    max-height: 150px;
+    object-fit: cover;
    }
    
    .notas {
@@ -119,7 +124,21 @@ body{
        cursor: pointer;
 
    }
-   
+  
+   .page-link{
+    color: #111e26;
+    transition: all 0.3s ease;
+    background-color: #BF895A;
+    border-color: white;
+   }    
+
+   .page-link:hover{
+    background-color: #f2f2f2;
+    border-color: #bf3326;
+    color: #bf3326;
+    cursor: pointer;
+   }
+
    @media (min-width: 768px) { 
    
        .noticias {
