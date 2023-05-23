@@ -120,49 +120,41 @@
 
 <div id="cookie-notification">
   <p>Este site utiliza cookies para melhorar a sua experiência de navegação.</p>
-  <button id="accept-cookie">Aceitar</button>
-  <button id="deny-cookie">Negar</button>
+  <button id="accept-cookie">Ok</button>
 </div>
 
 <script>
-  // Função para fechar a notificação de cookie e definir um cookie de aceitação ou negação
-  function closeCookieNotification(accepted) {
+  // Função para fechar a notificação de cookie e definir um cookie de aceitação
+  function closeCookieNotification() {
     document.getElementById("cookie-notification").style.display = "none";
-    var cookieValue = accepted ? "true" : "false";
-    // Define um cookie chamado "cookie_accepted" com o valor de aceitação ou negação e validade de 30 dias
+    // Define um cookie chamado "cookie_accepted" com valor "true" e validade de 30 dias
     var date = new Date();
     date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
     var expires = "expires=" + date.toUTCString();
-    document.cookie = "cookie_accepted=" + cookieValue + ";" + expires + ";path=/";
+    document.cookie = "cookie_accepted=true;" + expires + ";path=/";
   }
 
-  // Verifica se o cookie de aceitação ou negação já existe
+  // Verifica se o cookie de aceitação já existe
   function checkCookieAccepted() {
     var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
       var cookie = cookies[i].trim();
       if (cookie.indexOf("cookie_accepted=") === 0) {
-        return cookie.substring("cookie_accepted=".length, cookie.length) === "true";
+        return true;
       }
     }
     return false;
   }
 
-  // Verifica se o cookie de aceitação ou negação existe, caso contrário, exibe a notificação
+  // Verifica se o cookie de aceitação existe, caso contrário, exibe a notificação
   if (!checkCookieAccepted()) {
     document.getElementById("cookie-notification").style.display = "block";
   }
 
   // Adiciona o evento de clique ao botão de aceitar cookie
-  document.getElementById("accept-cookie").addEventListener("click", function() {
-    closeCookieNotification(true);
-  });
-
-  // Adiciona o evento de clique ao botão de negar cookie
-  document.getElementById("deny-cookie").addEventListener("click", function() {
-    closeCookieNotification(false);
-  });
+  document.getElementById("accept-cookie").addEventListener("click", closeCookieNotification);
 </script>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

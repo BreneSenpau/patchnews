@@ -169,24 +169,6 @@ body{
     cursor: pointer;
   }
 
-  #deny-cookie {
-    background-color: #BF895A;
-    color: #111e26;
-    border: 2px solid #111e26;
-    padding: 8px 15px;
-    border-radius: 4px;
-    margin-right: 10px;
-    transition: all 0.3s ease; 
-  }
-  
-  #deny-cookie:hover {
-    cursor: pointer;
-    background-color: #f2f2f2;
-    border-color: #bf3326;
-    color: #bf3326;
-    cursor: pointer;
-  }
-
    @media (min-width: 768px) { 
    
        .noticias {
