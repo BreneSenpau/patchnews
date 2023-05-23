@@ -140,8 +140,8 @@ body{
    }
 
    #cookie-notification {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    border: 1px solid #bf3326;
     border-radius: 4px;
     padding: 15px;
     position: fixed;
@@ -153,16 +153,38 @@ body{
   }
   
   #accept-cookie {
-    background-color: #428bca;
-    color: #fff;
-    border: none;
+    background-color: #BF895A;
+    color: #111e26;
+    border: 2px solid #111e26;
     padding: 8px 15px;
     border-radius: 4px;
-    cursor: pointer;
+    transition: all 0.3s ease; 
   }
   
   #accept-cookie:hover {
-    background-color: #3071a9;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border-color: #bf3326;
+    color: #bf3326;
+    cursor: pointer;
+  }
+
+  #deny-cookie {
+    background-color: #BF895A;
+    color: #111e26;
+    border: 2px solid #111e26;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: all 0.3s ease; 
+  }
+  
+  #deny-cookie:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border-color: #bf3326;
+    color: #bf3326;
+    cursor: pointer;
   }
 
    @media (min-width: 768px) { 
