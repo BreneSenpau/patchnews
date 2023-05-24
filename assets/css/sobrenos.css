@@ -16,8 +16,8 @@ body {
    } 
    #jinx { 
     position: relative;
-    width: auto;
-    height: auto;
+    width: 900px;
+    height: 1288px;
     left: -6px;
     top: 0px;
    }
@@ -27,4 +27,32 @@ body {
     height: 166px;
     right:0px;
     top: 0px;
+   }
+   .rodape{
+    position: absolute;
+    width: 1726px;
+    height: 79px;
+    left: -6px;
+    top: 1919px;
+    
+    background: #BF895A;}
+
+   .mario {
+    position: absolute;
+    width: 149px;
+    height: 150px;
+    left: 1397.82px;
+    top: 214px;
+
+    background: url(mario);
+    transform: rotate(7.21deg);
+   } 
+   .programadores{
+    position: absolute;
+    width: 900px;
+    height: 927px;
+    left: -6px;
+    top: 992px;
+
+    background: url(programadores.jpg)
    }
