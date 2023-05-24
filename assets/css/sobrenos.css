@@ -1,57 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #f2f2f2;
    }
-   .texto{
-    position: absolute;
-   width: 600px;
-   height: 618px;
-   left: 941px;
-   top: 389px;
 
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 24px;
-   line-height: 29px;
-   } 
-   #jinx { 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto {
+    display: block;
     position: relative;
-    width: 900px;
-    height: 1288px;
-    left: -6px;
-    top: 0px;
-   }
-   .logo {
-    position: absolute;
+    width: 100%;
+}
+.texto{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 20px;
+} 
+
+
+
+.logo {
     width: 188px;
     height: 166px;
-    right:0px;
-    top: 0px;
-   }
-   .rodape{
-    position: absolute;
-    width: 1726px;
+}
+
+.rodape{
+    width: 100%;
     height: 79px;
-    left: -6px;
-    top: 1919px;
     background-color: #BF895A;
-    }
-   .mario {
-    position: absolute;
+}
+
+
+.mario {
     width: 149px;
     height: 150px;
-    left: 1397.82px;
-    top: 214px;
-
-    background: url(mario);
+    float:right;
+    background: url('../images/mario.png');
     transform: rotate(7.21deg);
-   } 
-  
-   .final{
-    position: absolute;
+} 
+
+.bola {
+    width: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo-rodape{
     width: 149px;
     height: 103px;
-    left: 745px;
-    top: 1998px;
+}
 
-   }
+#jinx { 
+    width: 100%;
+}
+
+.programadores {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) { 
+    main {
+        flex-grow: 1;
+        flex-direction: row;
+    }
+
+
+    
+    #jinx { 
+       width: 50vw;
+    }
+    
+    .programadores {
+       width:  50vw;
+    }
+    
+}
