@@ -34,9 +34,8 @@ body {
     height: 79px;
     left: -6px;
     top: 1919px;
-    
-    background: #BF895A;}
-
+    background-color: #BF895A;
+    }
    .mario {
     position: absolute;
     width: 149px;
@@ -47,12 +46,12 @@ body {
     background: url(mario);
     transform: rotate(7.21deg);
    } 
-   .programadores{
+  
+   .final{
     position: absolute;
-    width: 900px;
-    height: 927px;
-    left: -6px;
-    top: 992px;
+    width: 149px;
+    height: 103px;
+    left: 745px;
+    top: 1998px;
 
-    background: url(programadores.jpg)
    }
