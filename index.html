@@ -39,7 +39,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="https://discord.gg/98y4pMCnYU">Discord</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Sobre nós</a></li>
+                      <li><a class="dropdown-item" href="sobrenos.html">Sobre nós</a></li>
                     </ul>
     
                   </li>
@@ -124,17 +124,14 @@
 </div>
 
 <script>
-  // Função para fechar a notificação de cookie e definir um cookie de aceitação
   function closeCookieNotification() {
     document.getElementById("cookie-notification").style.display = "none";
-    // Define um cookie chamado "cookie_accepted" com valor "true" e validade de 30 dias
     var date = new Date();
     date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
     var expires = "expires=" + date.toUTCString();
     document.cookie = "cookie_accepted=true;" + expires + ";path=/";
   }
 
-  // Verifica se o cookie de aceitação já existe
   function checkCookieAccepted() {
     var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
@@ -146,12 +143,10 @@
     return false;
   }
 
-  // Verifica se o cookie de aceitação existe, caso contrário, exibe a notificação
   if (!checkCookieAccepted()) {
     document.getElementById("cookie-notification").style.display = "block";
   }
 
-  // Adiciona o evento de clique ao botão de aceitar cookie
   document.getElementById("accept-cookie").addEventListener("click", closeCookieNotification);
 </script>
 
