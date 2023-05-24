@@ -14,9 +14,17 @@ body {
    font-size: 24px;
    line-height: 29px;
    } 
-   #jinx { position: absolute;
-    width: 900px;
-    height: 1288px;
+   #jinx { 
+    position: relative;
+    width: auto;
+    height: auto;
     left: -6px;
+    top: 0px;
+   }
+   .logo {
+    position: absolute;
+    width: 188px;
+    height: 166px;
+    right:0px;
     top: 0px;
    }
