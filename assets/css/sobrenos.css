@@ -20,7 +20,7 @@ main {
     width: 100%;
 }
 .texto{
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -33,6 +33,7 @@ main {
 .logo {
     width: 188px;
     height: 166px;
+    margin-left: 90%;
 }
 
 .rodape{
@@ -85,5 +86,7 @@ footer {
     .programadores {
        width:  50vw;
     }
-    
+    .feito{ 
+        margin-top: 300px; 
+    }
 }
